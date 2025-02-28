@@ -1,1 +1,34 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeBron Animation</title>
+    <style>
+        body {
+            overflow: hidden;
+        }
+        .lebron {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            font-size: 2rem;
+            font-weight: bold;
+            animation: moveAcross 5s linear infinite;
+        }
+        @keyframes moveAcross {
+            from {
+                left: -100px;
+            }
+            to {
+                left: 100vw;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="lebron">LeBron</div>
+
+</body>
+</html>
